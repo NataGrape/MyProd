@@ -7,4 +7,8 @@ public class Circle extends Shape{
         super(n);//обращаемся к родюклассу для передачи параметра с помощью <super>
         this.radius = radius;//передаем параметры с пом. <this>
     };
+
+    void Show(){
+        System.out.println("Circle color is "+ super.ShapeColor +"; radius = " + radius);
+    };
 }

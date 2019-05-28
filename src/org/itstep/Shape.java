@@ -1,17 +1,17 @@
 package org.itstep;
 //родительский класс
 public class Shape {
-    public String ShapeName ;//все (наши) фигуры имеют имя
+    public String ShapeColor = "Have no color";//чтоб не NULL напишем <Have no color>
 
     public Shape(){};//конструктор по умолчанию(он и так есть конечно...)
 
     public Shape(String n){
-//можем проверить какие фигуры у нас есть
-        if(n=="Square" || n=="Triangle" || n=="Circle")
-        ShapeName = n;
-//и вывести msg если нету введенной
+//можем проверить какие цвета у нас есть
+        if(n=="black" || n=="blue" || n=="red" || n == "green")
+        ShapeColor = n;
+//и вывести msg если нету такого цвета
         else{
-            System.out.println("we do not have is[" + n + "]");
+            System.out.println("we do not have is[" + n + "] color");
         }
     };
 
