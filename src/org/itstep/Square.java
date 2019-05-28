@@ -3,6 +3,8 @@ package org.itstep;
 public class Square extends Shape{
     double side = 4.2;
 
+    public Square(){};
+
     public Square(String n,double side){
 
         super(n);//обращаемся к род.классу для передачи параметра с помощью <super>

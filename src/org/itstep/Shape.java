@@ -3,7 +3,7 @@ package org.itstep;
 public class Shape {
     public String ShapeColor = "Have no color";//чтоб не NULL напишем <Have no color>
 
-    public Shape(){};//конструктор по умолчанию(он и так есть конечно...)
+    public Shape(){};//конструктор по умолчанию
 
     public Shape(String n){
 //можем проверить какие цвета у нас есть

@@ -10,5 +10,10 @@ public class Main {
         sqr.Show();
         crc.Show();
 
+        Triangle trn2 = new Triangle("",23,18);
+        trn2.Show();
+
+        Triangle trn3 = new Triangle();//создался обьект с пустыми значениями 0.0
+        trn3.Show();
     }
 }
