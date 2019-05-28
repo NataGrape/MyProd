@@ -1,8 +1,8 @@
 package org.itstep;
 
 public class Triangle extends Shape{
-    double height ;
-    double foundation ;
+    private double height ;
+    private double foundation ;
 
     public Triangle(){};//кон. по ум.
 
@@ -15,4 +15,11 @@ public class Triangle extends Shape{
     void Show(){
         System.out.println("Triangle color is "+ super.ShapeColor +"; height = "+ height +"; foundation = "+ foundation);
     };
+
+    //
+    public double Shapearea(){
+        System.out.println("Triangle area = "+   height*foundation/2);//покажет результат
+        return height*foundation/2;
+    }
+
 }

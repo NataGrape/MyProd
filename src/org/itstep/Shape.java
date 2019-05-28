@@ -15,4 +15,10 @@ public class Shape {
         }
     };
 
+    //переопределила этот метод в подклассах
+    public double Shapearea(){
+        return 0;
+    }
+
+
 }

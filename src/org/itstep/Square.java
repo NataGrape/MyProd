@@ -1,7 +1,7 @@
 package org.itstep;
 
 public class Square extends Shape{
-    double side = 4.2;
+    private double side ;
 
     public Square(){};
 
@@ -14,4 +14,9 @@ public class Square extends Shape{
     void Show(){
         System.out.println("Square color is "+ super.ShapeColor +"; side = " + side);
     };
+//Площадь квадрата равна квадрату длины его стороны
+    public double Shapearea(){
+        System.out.println("Square area = "+  side*side );//покажет результат
+        return side*side;
+    }
 }
