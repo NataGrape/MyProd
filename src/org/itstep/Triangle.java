@@ -9,7 +9,7 @@ public class Triangle extends Shape{
         this.height = height;//передаем параметры с пом. <this>
         this.foundation = foundation;//--//--//
     };
-
+    //
     void Show(){
         System.out.println("Triangle color is "+ super.ShapeColor +"; height = "+ height +"; foundation = "+ foundation);
     };
