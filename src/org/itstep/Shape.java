@@ -1,13 +1,18 @@
 package org.itstep;
-
+//родительский класс
 public class Shape {
-    public static void main(String[] args) {
-        Triangle trn = new Triangle();
-        Square sqr = new Square();
-        Circle crc = new Circle();
+    public String ShapeName ;//все (наши) фигуры имеют имя
 
-        System.out.println("Triangle height = " + trn.height + "; Triangle foundation = " + trn.foundation);
-        System.out.println("Square side = " + sqr.side);
-        System.out.println("Circle radius = " + crc.radius);
-    }
+    public Shape(){};//конструктор по умолчанию(он и так есть конечно...)
+
+    public Shape(String n){
+//можем проверить какие фигуры у нас есть
+        if(n=="Square" || n=="Triangle" || n=="Circle")
+        ShapeName = n;
+//и вывести msg если нету введенной
+        else{
+            System.out.println("we do not have is[" + n + "]");
+        }
+    };
+
 }
